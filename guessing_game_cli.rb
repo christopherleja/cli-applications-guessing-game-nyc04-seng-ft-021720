@@ -3,8 +3,7 @@ def run_guessing_game
   number = 1+rand(6)
   input = gets.chomp
     if input.to_str == "#{number}"
-      return "You guessed the correct number!"
-      puts "You guessed the correct number!"
+      puts "/You guessed the correct number!/"
     elsif input != number && input != "exit"
       puts "Sorry! The computer guessed #{number}."
     elsif input == "exit"
